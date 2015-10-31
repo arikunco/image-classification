@@ -1,9 +1,13 @@
 # image-classification
 Texture image classification with Python and MATLAB 
 
-Image source: http://www.nada.kth.se/cvap/databases/kth-tips/download.html (use link greyscale PNG Images - 23MB)
+Image source: http://www.nada.kth.se/cvap/databases/kth-tips/download.html (use link 'greyscale PNG Images' - 23MB)
 
 Textures Images used: Aluminium Foil, Corduroy, and Orange Peel. 
+
+Texture Images 
+![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/texture.jpg "Test Smartphone 1")
+
 
 Train set: 120 images (40 images from each class)
 
@@ -26,7 +30,7 @@ Extracting Features with Matlab
 1. Download texture image dataset 
 2. Collect in one folder, rename images3.
 3. Run .m file 
-4. Save dataku.mat file 
+4. Save dataku.mat file (don't worry! dataku.mat file is provided here). To know more about the detail, I am preparing to upload the MATLAB code later. 
 
 Number of features: 4: 
 1. attribute 1: Entropy of GLCM 
@@ -54,11 +58,11 @@ Note: You can change line 14 to switch the features of GLCM, FFT, or all feature
 # Result
 
 1. KNN with GLCM, FFT
-![alt text](https://raw.githubusercontent.com/arikunco/fmatch-homography/master/result_samsung.jpg "Test Smartphone 1")
+![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result1.jpg "Test Smartphone 1")
 
 2. GNB with GLCM, FFT
-![alt text](https://raw.githubusercontent.com/arikunco/fmatch-homography/master/result_samsung2.jpg "Test Smartphone 1")
+![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result2.jpg "Test Smartphone 1")
 
 3. KNN with GLCM + FFT and GNB with GLCM + FFT
-![alt text](https://raw.githubusercontent.com/arikunco/fmatch-homography/master/result_tnt.jpg "Test Trinity Book")
+![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result3.jpg "Test Trinity Book")
 
