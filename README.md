@@ -53,7 +53,7 @@ Note: You can change line 14 to switch the features of GLCM, FFT, or all feature
 GNB
 
 ```python
-python imageclassification4_knn.py 
+python imageclassification4_gnb.py 
 ```
 Note: You can change line 14 to switch the features of GLCM, FFT, or all features.  
 
