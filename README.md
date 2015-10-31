@@ -1,4 +1,4 @@
-# image-classification
+## image-classification
 Texture image classification with Python and MATLAB 
 
 Image source: http://www.nada.kth.se/cvap/databases/kth-tips/download.html (use link 'greyscale PNG Images' - 23MB)
@@ -14,16 +14,18 @@ Train set: 120 images (40 images from each class)
 Test set: 120 images (40 images from each class)
 
 Features (extracted using Matlab):
-1. Gray-level co-occurrence matrix (GLCM): Energy and Entropy
-2. Fast Fourier Transform (FFT): Mean and Variances 
+
+1. Gray-level co-occurrence matrix (GLCM): Energy and Entropy.
+2. Fast Fourier Transform (FFT): Mean and Variances. 
 
 Classification method: 
+
 1. K-nearest neighbor
 2. Gaussian Naïve-bayes
 
 Evaluation: classification accuracy
 
-# The Recipes
+## The Recipes
 
 Extracting Features with Matlab
 
@@ -33,6 +35,7 @@ Extracting Features with Matlab
 4. Save dataku.mat file (don't worry! dataku.mat file is provided here). To know more about the detail, I am preparing to upload the MATLAB code later. 
 
 Number of features: 4: 
+
 1. attribute 1: Entropy of GLCM 
 2. attribute 2: Energy of GLCM
 3. attribute 3: Mean of FFT
@@ -40,14 +43,14 @@ Number of features: 4:
 
 Classifying the images 
 
-1. KNN
+KNN
 
 ```python
 python imageclassification3_knn.py 
 ```
 Note: You can change line 14 to switch the features of GLCM, FFT, or all features.
 
-2. GNB
+GNB
 
 ```python
 python imageclassification4_knn.py 
@@ -55,14 +58,17 @@ python imageclassification4_knn.py
 Note: You can change line 14 to switch the features of GLCM, FFT, or all features.  
 
 
-# Result
+## Result
 
-1. KNN with GLCM, FFT
+KNN with GLCM, FFT
+
 ![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result1.jpg "Test Smartphone 1")
 
-2. GNB with GLCM, FFT
+GNB with GLCM, FFT
+
 ![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result2.jpg "Test Smartphone 1")
 
-3. KNN with GLCM + FFT and GNB with GLCM + FFT
+KNN with GLCM + FFT and GNB with GLCM + FFT
+
 ![alt text](https://raw.githubusercontent.com/arikunco/image-classification/master/result3.jpg "Test Trinity Book")
 
