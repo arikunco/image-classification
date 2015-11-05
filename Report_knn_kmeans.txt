@@ -1,0 +1,56 @@
+KNN normal: 
+
+Classification report for classifier KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_neighbors=3, p=2, weights='uniform'):
+             precision    recall  f1-score   support
+
+        1.0       0.97      0.97      0.97        40
+        2.0       0.80      0.80      0.80        40
+        3.0       0.82      0.82      0.82        40
+
+avg / total       0.87      0.87      0.87       120
+
+
+Confusion matrix:
+[[39  1  0]
+ [ 1 32  7]
+ [ 0  7 33]]
+
+
+
+K-Means normal: 
+
+Classification report for classifier K-Means:
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.96      0.98        80
+        1.0       0.21      0.24      0.22        80
+        2.0       0.12      0.11      0.12        80
+
+avg / total       0.44      0.44      0.44       240
+
+
+Confusion matrix:
+[[77  0  3]
+ [ 0 19 61]
+ [ 0 71  9]]
+
+
+
+K-Means cascade KNN: 
+
+Classification report for classifier KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_neighbors=3, p=2, weights='uniform'):
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.97      0.99        40
+        1.0       0.84      0.78      0.81        40
+        2.0       0.80      0.88      0.83        40
+
+avg / total       0.88      0.88      0.88       120
+
+
+Confusion matrix:
+[[39  1  0]
+ [ 0 31  9]
+ [ 0  5 35]]
